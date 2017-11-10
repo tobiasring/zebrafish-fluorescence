@@ -31,7 +31,7 @@ function [t, ff0_enh] = returned_enhanced_signal(data)
     wnl = fcutoffl / f_sample;
     wnh = fcutoffh / f_sample;
     %[b, a] = butter(filterorder, wnh, 'low');
-    [b, a] = butter(filterorder, [wnl, wnh], 'pass');
+    [b, a] = butter(filterorder, [wnl, wnh], 'bandpass');
     ff0_enh = filtfilt(b, a, ff0);
     fprintf(' ... done. \n\n')
     fprintf('############## finished processing data. ###########\n\n')
