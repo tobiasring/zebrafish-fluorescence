@@ -656,4 +656,4 @@ for i = 1:length(traces_3004_Gly_baseline)
     clear f Y df idxlen idx m i j
 end
 
-clear ratio maxNumber freq_bnd result sze fid ans 
+clear ratio maxNumber freq_bnd result sze fid ans freqInter freqOfInterest
